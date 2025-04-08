@@ -12,20 +12,51 @@
       background-color: #121212;
       color: #f0f0f0;
     }
-    header {
-      font-family: 'Orbitron', sans-serif;
+    .hero {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
       background-color: #1a1a1a;
-      padding: 60px 20px;
+      padding: 40px 20px;
+      gap: 20px;
+    }
+    .hero-img {
+      width: 300px;
+      height: 300px;
+      border-radius: 16px;
+      border: 3px solid #a678ff;
+      object-fit: cover;
+    }
+    .hero-center {
       text-align: center;
+    }
+    .hero-title {
+      font-family: 'Orbitron', sans-serif;
       color: #d5b3ff;
-    }
-    header h1 {
+      font-size: 2.5em;
       margin: 0;
-      font-size: 3em;
     }
-    header p {
-      font-size: 1.4em;
+    .hero-sub {
       color: #c299ff;
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .arrow-button {
+      width: 200px;
+      height: 60px;
+      background-color: #c299ff;
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: bold;
+      font-size: 1em;
+      border: none;
+      border-radius: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
     }
     nav {
       font-family: 'Orbitron', sans-serif;
@@ -60,8 +91,24 @@
       margin-top: 30px;
       color: #f0f0f0;
     }
-    .contact a, a {
-      color: #b080ff;
+    .button-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .button-link {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #7c4dff;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    .button-link:hover {
+      background-color: #a678ff;
     }
     footer {
       text-align: center;
@@ -74,10 +121,14 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Andy Tripathy</h1>
-    <p>UX / UI Designer</p>
-  </header>
+  <section class="hero">
+    <img src="andytrip17" alt="Andy Tripathy" class="hero-img">
+    <div class="hero-center">
+      <h1 class="hero-title">Andy Tripathy</h1>
+      <p class="hero-sub">UX / UI Designer</p>
+    </div>
+    <a href="#" class="arrow-button">View My Designs</a>
+  </section>
 
   <nav>
     <a href="#about">About</a>
@@ -94,13 +145,12 @@
   <section id="experience">
     <h2>Experience</h2>
     <h3>Procor – Human Resources Assistant</h3>
-    <p><em> February 2022 – Juy 2022</em></p>
+    <p><em>February 2022 – July 2022</em></p>
     <p>I actively contribute to recruitment and onboarding processes by creating job ads and scheduling interviews. Responsible for maintaining employee records and updating HR databases, I ensure accurate and organized information. Additionally, I support HR projects and initiatives, including employee engagement activities, to foster a positive workplace environment.</p>
 
-    <h3>Vector Marketing – Sales Assosciate</h3>
+    <h3>Vector Marketing – Sales Associate</h3>
     <p><em>June 2022 – September 2022</em></p>
-    <p> I am skilled in generating leads and scheduling appointments through diverse marketing channels,engaging potential clients interested in kitchen cutlery. Through informative Zoom calls, I showcase our high-quality cutlery products, understanding clients' needs to offer personalized recommendations. Building and maintaining strong client relationships, I address inquiries promptly. Keeping abreast of product knowledge and industry trends, I effectively communicate our cutlery's value proposition. Additionally, I provide accurate and timely reports on sales activities, client feedback, and market
- insights.</p>
+    <p>I am skilled in generating leads and scheduling appointments through diverse marketing channels, engaging potential clients interested in kitchen cutlery. Through informative Zoom calls, I showcase our high-quality cutlery products, understanding clients' needs to offer personalized recommendations. Building and maintaining strong client relationships, I address inquiries promptly. Keeping abreast of product knowledge and industry trends, I effectively communicate our cutlery's value proposition. Additionally, I provide accurate and timely reports on sales activities, client feedback, and market insights.</p>
   </section>
 
   <section id="education">
@@ -111,8 +161,11 @@
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Let's connect! You can email me at <a href="mailto:a28tripa@uwaterloo.ca">a28tripa@uwaterloo.ca</a> or find me on <a href="#">LinkedIn</a>.</p>
-    <p><a href="#">Download Resume (PDF)</a></p>
+    <p>Let's connect! You can email me at <a href="mailto:a28tripa@uwaterloo.ca">a28tripa@uwaterloo.ca</a>.</p>
+    <div class="button-container">
+      <a class="button-link" href="https://www.linkedin.com/in/andy-tripathy-59770b2a1/" target="_blank">View LinkedIn</a>
+      <a class="button-link" href="AndyTripathy_RESUME.pdf" target="_blank">View My Resume</a>
+    </div>
   </section>
 
   <footer>
