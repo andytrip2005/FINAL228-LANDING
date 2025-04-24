@@ -62,49 +62,58 @@
         gap: 15px;
       }
 
-     .arrow-button {
-  width: 200px;
-  height: 60px;
-  background: linear-gradient(135deg, #3e1f71, #7c4dff);
-  color: #f3eaff;
-  font-family: 'Orbitron', sans-serif;
-  font-weight: bold;
-  font-size: 1em;
-  border: 2px solid #a678ff;
-  border-radius: 16px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 10px;
-  text-decoration: none;
-  transition: 0.4s ease;
-  box-shadow: 0 0 12px #7c4dff99;
-  background-size: 200% 200%;
-  animation: metallicShift 6s linear infinite;
-}
+      .arrow-button {
+        width: 200px;
+        height: 60px;
+        background: linear-gradient(135deg, #3e1f71, #7c4dff);
+        color: #f3eaff;
+        font-family: 'Orbitron', sans-serif;
+        font-weight: bold;
+        font-size: 1em;
+        border: 2px solid #a678ff;
+        border-radius: 16px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        transition: 0.4s ease;
+        box-shadow: 0 0 12px #7c4dff99;
+        background-size: 200% 200%;
+        animation: metallicShift 1.3s linear infinite;
+      }
 
-.arrow-button:hover {
-  animation: pulseGlow 1.2s infinite alternate, metallicShift 6s linear infinite;
-  box-shadow: 0 0 25px #a678ff, 0 0 40px #c299ff;
-  border-color: #c299ff;
-}
+      .arrow-button:hover {
+        animation: pulseGlow 0.5s infinite alternate, metallicShift 1s linear infinite;
+        box-shadow: 0 0 25px #a678ff, 0 0 40px #c299ff;
+        border-color: #c299ff;
+      }
 
-@keyframes metallicShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+      @keyframes metallicShift {
+        0% {
+          background-position: 0% 50%;
+        }
 
-@keyframes pulseGlow {
-  0% {
-    box-shadow: 0 0 20px #a678ff, 0 0 30px #a678ff;
-  }
-  100% {
-    box-shadow: 0 0 30px #c299ff, 0 0 45px #c299ff;
-  }
-}
+        50% {
+          background-position: 100% 50%;
+        }
+
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      @keyframes pulseGlow {
+        0% {
+          box-shadow: 0 0 20px #a678ff, 0 0 30px #a678ff;
+        }
+
+        100% {
+          box-shadow: 0 0 30px #c299ff, 0 0 45px #c299ff;
+        }
+      }
 
 
       nav {
@@ -124,7 +133,7 @@
         color: #c299ff;
         font-weight: bold;
         font-size: 1.1em;
-        transition: transform 0.2s ease, box-shadow 0.3s ease;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
 
       nav a:hover {
@@ -210,7 +219,7 @@
         text-decoration: none;
         font-weight: bold;
         border-radius: 8px;
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        transition: background-color 0.2s ease, box-shadow 0.2s ease;
       }
 
       .button-link:hover {
@@ -270,10 +279,10 @@
           <p>Fluent in Photoshop, Illustrator, Premiere Pro, After Effects, and InDesign — using them to craft brand identities, edit narrative films, design high-impact graphics, layout polished presentations and documents</p>
         </div>
         <div class="skill-card">
-  <img src="DaVinci_Resolve_Studio.png" alt="DaVinci" style="width: 40px; height: 40px; margin-bottom: px;">
-  <h3>DaVinci Resolve</h3>
-  <p>Comfortable with editing, color grading, and visual polishing in DaVinci Resolve — used for student films and creative projects to build cinematic storytelling skills</p>
-</div>
+          <img src="DaVinci_Resolve_Studio.png" alt="DaVinci" style="width: 40px; height: 40px; margin-bottom: px;">
+          <h3>DaVinci Resolve</h3>
+          <p>Comfortable with editing, color grading, and visual polishing in DaVinci Resolve — used for student films and creative projects to build cinematic storytelling skills</p>
+        </div>
         <div class="skill-card">
           <img src="capcut.png" alt="CapCut" style="width: 40px; height: 40px; margin-bottom: 0px;">
           <h3>CapCut</h3>
@@ -285,14 +294,14 @@
           <p>Experienced with Figma for wireframing, prototyping, and collaborative design — used in student UX projects and group interfaces to plan and present user-friendly layouts</p>
         </div>
         <div class="skill-card">
-  <img src="canva2.webp" alt="Canva" style="width: 40px; height: 40px;">
-  <h3>Canva</h3>
-  <p>Skilled in using Canva to design social posts, event flyers, and pitch decks — great for creating polished, on-brand visuals quickly for class, clubs, or content sharing</p>
-</div>
+          <img src="canva2.webp" alt="Canva" style="width: 40px; height: 40px;">
+          <h3>Canva</h3>
+          <p>Skilled in using Canva to design social posts, event flyers, and pitch decks — great for creating polished, on-brand visuals quickly for class, clubs, or content sharing</p>
+        </div>
         <div class="skill-card" style="background: linear-gradient(135deg, #0d1a2b, #123456); color: #b8dcff; border: 2px solid #4db8ff; box-shadow: 0 0 20px #4db8ff;">
-  <h3>Camera & Lighting Equipment</h3>
-  <p>Confident with DSLR and mirrorless camera setups, tripods, rigs, lighting kits, and field gear — used across short films and campus projects to achieve clean framing, stable shots, and mood lighting.</p>
-</div>
+          <h3>Camera & Lighting Equipment</h3>
+          <p>Confident with DSLR and mirrorless camera setups, tripods, rigs, lighting kits, and field gear — used across short films and campus projects to achieve clean framing, stable shots, and mood lighting.</p>
+        </div>
       </div>
     </section>
 
